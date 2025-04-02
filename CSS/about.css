@@ -1,0 +1,183 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: whitesmoke;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background: #161b22;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #58a6ff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e6edf3;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #58a6ff;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #c9d1d9;
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-item {
+    background: hsl(214,45%,90%);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #161b22;
+}
+
+.about-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #58a6ff;
+}
+
+
+.about-item ul {
+    list-style: none;
+    padding-left: 0;
+    color: #161b22;
+}
+
+.about-item ul li {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.about-item p {
+    font-size: 16px;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Education Section */
+.education {
+    text-align: center;
+}
+
+.edu-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.edu-box {
+    background: #1f2216;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.edu-box:hover {
+    transform: scale(1.05);
+}
+
+.edu-box h4 {
+    font-size: 20px;
+    color: #58a6ff;
+    margin-bottom: 5px;
+}
+
+.edu-box p {
+    font-size: 16px;
+    color: #c9d1d9;
+    margin-bottom: 5px;
+}
+
+.edu-box span {
+    display: block;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #58a6ff;
+    font-weight: bold;
+    animation: bounce 1s infinite;
+}
+
+/* Arrow Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
